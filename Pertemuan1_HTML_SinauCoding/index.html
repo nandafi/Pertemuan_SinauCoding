@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pertemuan 1 - Basic HTML</title>
+  </head>
+  <style>
+    th {
+      font-size: larger;
+    }
+
+    td {
+      padding: 5px;
+    }
+
+    .bold1 {
+      font-size: medium;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .ctr {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <table border="1" style="width: 90%; margin: auto; margin-top: 50px">
+      <thead>
+        <tr>
+          <th style="width: 100px; text-align: center">Jenis</th>
+          <th style="width: 300px">Hasil</th>
+          <th>Keterangan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="bold1">Text</td>
+          <td class="ctr"><input type="text" placeholder="input text" /></td>
+          <td>tipe inputan yang diterima adalah text</td>
+        </tr>
+        <tr>
+          <td class="bold1">Email</td>
+          <td class="ctr">
+            <input
+              type="email"
+              placeholder="input email"
+              pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+              required
+            />
+          </td>
+          <td>
+            tipe inputan yang diterima adalah email dan mengandung validasi
+          </td>
+        </tr>
+        <tr>
+          <td class="bold1">Number</td>
+          <td class="ctr">
+            <input type="number" placeholder="input number" />
+          </td>
+          <td>
+            tipe inputan yang diterima adalah number/angka dan karakter yang
+            diterima adalah angka
+          </td>
+        </tr>
+        <tr>
+          <td class="bold1">Password</td>
+          <td class="ctr">
+            <input type="password" placeholder="input password" />
+          </td>
+          <td>
+            tipe inputan yang diterima adalah text tetapi akan disembunyikan
+            dalam bentuk bintang
+          </td>
+        </tr>
+        <tr>
+          <td class="bold1">Radio</td>
+          <td class="ctr">
+            <input type="radio" id="radio1" value="radio1" name="radio" /><label
+              for="radio1"
+              style="font-weight: bold"
+              >Radio 1</label
+            >
+            <input type="radio" id="radio2" value="radio2" name="radio" /><label
+              for="radio2"
+              style="font-weight: bold"
+              >Radio 2</label
+            >
+          </td>
+          <td>
+            tipe inputan yang diterima adalah berupa pilihan dan hanya bisa
+            dipilih salah satu
+          </td>
+        </tr>
+        <tr>
+          <td class="bold1">Checkout</td>
+          <td class="ctr">
+            <label for="co1" style="font-weight: bold">Checkbox 1</label
+            ><input type="checkbox" name="co" id="co1" />
+            <label for="co2" style="font-weight: bold">Checkbox 2</label
+            ><input type="checkbox" name="co" id="co2" />
+          </td>
+          <td>
+            tipe inputan yang diterima adalah checklist dan bisa dipilih
+            beberapa
+          </td>
+        </tr>
+        <tr>
+          <td class="bold1">Range</td>
+          <td class="ctr"><input type="range" name="rangee" id="ran" /></td>
+          <td>tipe inputan yang diterima adalah bar yang bisa digeser</td>
+        </tr>
+        <tr>
+          <td class="bold1">Time</td>
+          <td class="ctr"><input type="time" name="jam" id="jam" /></td>
+          <td>tipe inputan yang diterima adalah format waktu</td>
+        </tr>
+        <tr>
+          <td class="bold1">Date</td>
+          <td class="ctr"><input type="date" name="tgl" id="tgl" /></td>
+          <td>
+            tipe inputan yang diterima adalah waktu dalam satuan hari (hh),
+            bulan (bb), dan tahun (tttt)
+          </td>
+        </tr>
+        <tr>
+          <td class="bold1">Week</td>
+          <td class="ctr"><input type="week" name="minggu" id="minggu" /></td>
+          <td>
+            tipe inputan yang diterima adalah format waktu dalam kurun waktu
+            satu minggu
+          </td>
+        </tr>
+        <tr>
+          <td class="bold1">Month</td>
+          <td class="ctr"><input type="month" name="bln" id="bln" /></td>
+          <td>
+            tipe inputan yang diterima adalah satuan hari bulan (bbbbbbbb) dan
+            tahun (tttt)
+          </td>
+        </tr>
+        <tr>
+          <td class="bold1">Color</td>
+          <td class="ctr"><input type="color" name="clr" id="clr" /></td>
+          <td>
+            tipe inputan yang diterima adalah berupa warna yang dihasilkan
+          </td>
+        </tr>
+        <tr>
+          <td class="bold1">File</td>
+          <td class="ctr">
+            <input type="file" name="files" id="files" value="asa" />
+          </td>
+          <td>tipe inputan yang diterima adalah dalam bentuk file</td>
+        </tr>
+        <tr>
+          <td class="bold1">Combo Box</td>
+          <td class="ctr">
+            <select name="pilihan" id="pilihan">
+              <option value="satu">Satu</option>
+              <option value="satu">Dua</option>
+            </select>
+          </td>
+          <td>tipe inputan yang diterima adalah option yang bisa dipilih</td>
+        </tr>
+        <tr>
+          <td class="bold1">Textarea</td>
+          <td class="ctr">
+            <textarea name="text1" id="text1" cols="30" rows="10"></textarea>
+          </td>
+          <td>
+            tipe inputan yang diterima adalah text tetapi dalam karakter yang
+            banyak
+          </td>
+        </tr>
+        <tr>
+          <td class="bold1">Button</td>
+          <td class="ctr"><button type="submit">Button</button></td>
+          <td>
+            suatu tombol yang bisa melakukan action tertentu ketika diberi
+            perintah
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
