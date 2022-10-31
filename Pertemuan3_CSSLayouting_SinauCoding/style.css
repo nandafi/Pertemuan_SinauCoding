@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  font-family: "Roboto";
+  margin: 0px;
+  padding: 0px;
+  display: block;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background: #701ddb;
+  height: 60px;
+  box-shadow: 0 0 50px #31126d;
+}
+
+.logo {
+  cursor: pointer;
+  /* margin-right: auto; */
+  display: flex;
+  align-items: center;
+  color: #fff200;
+}
+
+.logo img {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  padding-right: 10px;
+}
+
+.logo h1 {
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.logo span {
+  font-weight: 400;
+}
+
+.logo-right {
+  cursor: pointer;
+  /* margin-right: auto; */
+  float: right;
+  height: 50px;
+  padding-bottom: 20px;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  position: relative;
+}
+
+nav ul li a:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 5px;
+  background: #fff200;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  margin-top: 10px;
+  width: 0;
+}
+
+nav ul li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+nav ul li a:hover{
+  color: #fff200;
+}
+
+.logo-right {
+  float: right;
+}
+
+/* ------------HOME */
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100vh;
+  background: #801bea;
+  background: linear-gradient(90deg, #801bea 0%, #8b54d7 100%);
+}
+
+.home img {
+  width: 50%;
+}
+
+.home h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto";
+  font-size: 48px;
+  font-weight: 400;
+  color: #fff200;
+}
+
+.home-img1,
+.home-img2,
+.home-img3 {
+  position: absolute;
+}
+
+/* LEFT */
+.home-img1 {
+  max-width: 150px;
+  left: 18%;
+  top: 25%;
+}
+
+/* RIGHT-BOTTOM */
+.home-img2 {
+  max-width: 150px;
+  left: 75%;
+  top: 80%;
+}
+
+/* SCROLL-DOWN */
+.home-img3 {
+  max-width: 50px;
+  left: 50%;
+  top: 90%;
+}
+
+.home h1 span {
+  font-weight: 900;
+}
+
+/* ------------MAIN */
+main {
+  width: 100%;
+  display: flex;
+  background: #801bea;
+  background: linear-gradient(90deg, #801bea 0%, #8b54d7 100%);
+}
+
+/* ------------ABOUT */
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100vh;
+  width: 50%;
+}
+
+.about-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: "Roboto";
+}
+
+.about-box p {
+  font-size: 14px;
+  font-weight: 400px;
+  color: #fff200;
+  text-align: center;
+}
+
+.about-box button {
+  font-size: 10px;
+  font-weight: 900px;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 30px;
+  background: linear-gradient(90deg, #fff200 0%, #a59d00 100%);
+  border-style: none;
+}
+
+.about-img {
+  background: url("asset/asset7.svg") right no-repeat;
+
+  width: 50%;
+}
+
+.about-img img {
+  position: absolute;
+}
+
+/* TRIANGLE */
+.about-img1 {
+  max-width: 100px;
+  top: 80%;
+}
+
+/* DIAMOND */
+.about-img2 {
+  max-width: 130px;
+  top: 50%;
+  left: 60%;
+}
+
+/* CIRCLE */
+.about-img3 {
+  max-width: 130px;
+  top: 90%;
+  left: 70%;
+}
+
+/* ------------CONTACT */
+.contact-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100vh;
+  gap: 20px;
+  width: 80%;
+}
+
+.contact-box p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.contact-left,
+.contact-right {
+  width: 50%;
+  padding: 30px 0px;
+}
+
+.contact-right {
+  background: #701ddb;
+}
+
+.contact-left p,
+.contact-right p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff200;
+  text-align: center;
+}
+
+.inner-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: #fff200;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 9px 7px 29px 5px rgba(0, 0, 0, 0.65);
+}
+
+.contact-img {
+  height: 25%;
+}
